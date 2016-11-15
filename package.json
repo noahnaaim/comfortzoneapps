@@ -10,8 +10,8 @@
     "react-dom": "^15.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react  build",
+    "start": "react start",
+    "build": "react build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
