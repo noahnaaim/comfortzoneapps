@@ -3,6 +3,7 @@ import '../App.css'
 import Header from './Header'
 import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
+import TodoFooter from './TodoFooter'
 import Footer from './Footer'
 
 
@@ -11,6 +12,7 @@ const App = () => (
         <Header />
         <AddTodo />
         <VisibleTodoList />
+        <TodoFooter />
         <Footer />
     </div>
 )
