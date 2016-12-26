@@ -35,3 +35,11 @@
   background-color: #efefef;
   text-align: center;
 }
+
+
+.banner {
+  position: absolute;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
