@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   text1: string;
   isCopied1 : any;
+  inputTarget : any;
 }
