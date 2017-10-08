@@ -1,19 +1,13 @@
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
-import { BrowserModule } from '@angular/platform-browser';
-import { ClipboardModule } from 'ngx-clipboard';
+import { CopyPasterModule } from './copy-paster/copy-paster.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    ClipboardModule
+    CopyPasterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

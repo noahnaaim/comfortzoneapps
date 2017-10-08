@@ -27,6 +27,7 @@
     "core-js": "^2.4.1",
     "express": "^4.15.4",
     "ngx-clipboard": "^8.0.4",
+    "redux": "^3.7.2",
     "rxjs": "^5.4.2",
     "typescript": "~2.3.3",
     "zone.js": "^0.8.14"
