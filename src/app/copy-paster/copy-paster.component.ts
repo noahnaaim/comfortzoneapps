@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-main',
   template: `
     <div class="content">
-      <h3>CopyPaster</h3>
+      <h3>Paste & Copy</h3>
       <div class="row">
         <div class="col-md-9 col-md-offset-1">
           <div class="input-group">
