@@ -1,6 +1,6 @@
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
-import { CopyPasterModule } from './copy-paster/copy-paster.module';
+import { CopyPasterModule } from './copypaster/copypaster.module';
 
 @NgModule({
   declarations: [
