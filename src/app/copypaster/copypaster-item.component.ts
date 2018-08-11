@@ -19,21 +19,9 @@ import { Item } from "./item";
                   ngxClipboard [cbContent]="item.targetId"
                   (cbOnSuccess)="item.isCopied = true"
                   [class.btn-success]= "item.isCopied">copy</button>
-          <input type="text" class="form-control" [(ngModel)]="text" placeholder="content will be copy after click the copy button">
+          <input type="text" class="form-control" [(ngModel)]="item.targetId" placeholder="content will be copy after click the copy button">
           <span class="input-group-btn">
-        <button class="btn btn-default" [class.btn-success]= "isCopied1" type="button" ngxClipboard [cbContent]="text" (cbOnSuccess)="isCopied1 = true">copy</button>
-      </span>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        Click this button, it will copy the text from the input by referring to the <strong>input element</strong>
-        <div class="input-group">
-          <input type="text" class="form-control" [(ngModel)]=item.targetId placeholder="content will be copy after click the copy button"
-                 #item.targetId>
-          <span class="input-group-btn">
-        <button class="btn btn-default" [class.btn-success]= "isCopied2" type="button" [ngxClipboard]="inputTarget" (cbOnSuccess)="isCopied2 = true">copy</button>
+        <button class="btn btn-default" [class.btn-success]= "item.isCopied" type="button" ngxClipboard [cbContent]="item.targetId" (cbOnSuccess)="item.isCopied = true">copy</button>
       </span>
         </div>
       </div>
