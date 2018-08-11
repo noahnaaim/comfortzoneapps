@@ -21,7 +21,12 @@ import { CopyPasterService } from "./copypaster.service";
     HttpModule,
     ClipboardModule,
   ],
-  declarations: [ CopyPasterComponent, CopyPasterHeaderComponent, CopyPasterMainComponent, CopyPasterFooterComponent, CopyPasterListComponent, CopyPasterItemComponent ],
+  declarations: [ CopyPasterComponent,
+                  CopyPasterHeaderComponent,
+                  CopyPasterMainComponent,
+                  CopyPasterFooterComponent,
+                  CopyPasterListComponent,
+                  CopyPasterItemComponent ],
   exports: [ CopyPasterComponent ]
 })
 export class CopyPasterModule { }

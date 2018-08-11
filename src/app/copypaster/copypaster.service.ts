@@ -8,6 +8,7 @@ export class CopyPasterService {
 	constructor( ) {
 		this._items = [];
 		this._items[0] = new Item(0);
+		this._items[1] = new Item(1);
 	}
 
 	public get items(): Item[] {

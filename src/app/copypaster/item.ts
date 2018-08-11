@@ -9,7 +9,7 @@ export class Item {
 		this.index = index;
 		this.targetId = "text" + index;
 		this.isCopied = false;
-		this.label     = 'Paster #' + this.index+1;
+		this.label     = 'Paster #' + (this.index+1);
 		this.placeHolder = index > 0 ? 'Paste more stuff here' : 'Paste your stuff here';
 	}
 }
