@@ -9,10 +9,10 @@ import { Item } from "./item";
         Click this button, it will copy the text from the input by referring to the
         <strong>input element</strong>
         <div class="input-group">
-          <input type="text" class="form-control" [(ngModel)]="text2" placeholder="content will be copy after click the copy button"
+          <input type="text" class="form-control" [(ngModel)]="this.targetId" placeholder="content will be copy after click the copy button"
             #inputTarget>
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button" [ngxClipboard]="inputTarget" (cbOnSuccess)="isCopied2 = true" [class.btn-success]="isCopied2">copy</button>
+            <button class="btn btn-default" type="button" [ngxClipboard]="inputTarget" (cbOnSuccess)="this.isCopied = true" [class.btn-success]="isCopied">copy</button>
           </span>
         </div>
       </div>
