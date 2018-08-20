@@ -3,26 +3,17 @@ import { Item } from "./item";
 @Component({
   selector: 'app-copypaster-item',
   template: `
-    <div class="row">
-      <div class="col-sm-12">
-        Click this button, it will copy the text from the input by referring to the <strong>text content</strong>
+    <div class="row justify-content-center">
+      <div class="col-10">
+        <h3>Copy from text -- target</h3>
+        Click this button, it will copy the text from the input by referring to the
+        <strong>input element</strong>
         <div class="input-group">
-          <label>{{ item.label }}</label>
-          <input
-            type="text"
-            class="form-control"
-            name="{{item.targetId}}"
-            placeholder="{{item.placeHolder}}"
-            ngModel="{{item.targetId}}">
-          <button class="btn success"
-                  type="button"
-                  ngxClipboard [cbContent]="item.targetId"
-                  (cbOnSuccess)="item.isCopied = true"
-                  [class.btn-success]= "item.isCopied">copy</button>
-          <input type="text" class="form-control" [(ngModel)]="item.targetId" placeholder="content will be copy after click the copy button">
+          <input type="text" class="form-control" [(ngModel)]="text2" placeholder="content will be copy after click the copy button"
+            #inputTarget>
           <span class="input-group-btn">
-        <button class="btn btn-default" [class.btn-success]= "item.isCopied" type="button" ngxClipboard [cbContent]="item.targetId" (cbOnSuccess)="item.isCopied = true">copy</button>
-      </span>
+            <button class="btn btn-default" type="button" [ngxClipboard]="inputTarget" (cbOnSuccess)="isCopied2 = true" [class.btn-success]="isCopied2">copy</button>
+          </span>
         </div>
       </div>
     </div>
