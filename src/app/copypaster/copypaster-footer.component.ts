@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-copypaster-footer',
   template: `
     <p>
-      <---------------->
+      <------------------------->
     </p>
   `,
   styles: []
